@@ -1,0 +1,1 @@
+number=Math.round(3.11);
