@@ -2,7 +2,7 @@ public class nested_if {
 
     public static void main(String[] args) {
         boolean isStudent=true;
-        boolean isSenior=false;
+        boolean isSenior=true;
         double price=9.99;
 
         if(isStudent){
@@ -10,19 +10,23 @@ public class nested_if {
             System.out.println("you get a senior discount of 20%: ");
             System.out.println("you get a student discount of 10%: ");
             price*=.7;
-        }
-        else{
+            }
+            else{
             System.out.println("You get a studnt discount of 10%: ");
             price*=.9;
+            }
         }
-        
-
+        else{
+            if(isSenior){
+                System.out.println("You get a senior discount of 20%: ");
+                price*=.8;
         }
-        if(isSenior){
-            System.out.println("You get a senior discount of 20%: ");
-            price*=.8;
+            else{
+                price*=1;
+            }
         }
         System.out.printf("The price of the ticket is $%.2f ",price);
-    }
+        
     
+    }
 }
