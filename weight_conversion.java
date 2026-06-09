@@ -21,12 +21,16 @@ public class weight_conversion {
             newWeight=weight* 2.20462;
             System.out.println("The new Weight in lbs is: "+newWeight);
         }
-        if(choice==2){
+        else if(choice==2){
             System.out.print("Enter the weight in lbs: ");
             weight=sc.nextDouble();
             newWeight=weight* 0.453592;
             System.out.println("The new weight in kgs is: " +newWeight);
 
         }
+        else{
+            System.out.println("NOT a valid choice:");
+        }
+        sc.close();
     }
 }
